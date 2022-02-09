@@ -43,19 +43,32 @@ nav, nav ul{
 }
 nav ul li{
     list-style: none;
-    padding-right: 25px;
+    
 }
+
 nav ul li a{
     text-decoration: none;
     color: white;
+    padding: 5px 25px;
+    border-radius: 10px;
+    
+}
+nav ul li a:hover{
+    background-color: white;
+    color: #562EFF;
+    transition: all 0.1s ease-in;
+}
+.profile{
+    margin-left: 16px;
 }
 /* top player section styles */
 .container{
     width: 870px;
     background-color: white;
     padding: 30px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
     border-radius: 5px;
+    margin-bottom: 15px;
 }
 .section-title{
     color: #562EFF;
@@ -79,10 +92,12 @@ nav ul li a{
 }
 .player-name{
     font-size: 18px;
+    font-weight: normal;
     margin-left: 16px;
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
 }
 /* top blogs section start */
 .blogs{
@@ -113,4 +128,74 @@ hr{
 .blog-author p a{
     text-decoration: none;
     color: #562EFF;
+}
+/* latest blog section styles */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 35px;
+}
+.course-img{
+    width: 224px;
+}
+.course-title{
+    font-size: 20px;
+    font-weight: normal;
+}
+.course-author{
+    font-size: 14px;
+    color: #ED6B4F;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.course-info .ratings{
+    font-size: 12px;
+}
+.course-info .filled{
+    color:#FFC014 ;
+}
+.course-info .empty{
+    color:#AEAEAE ;
+}
+.course-info .point{
+    color: #A2A2A2;
+    margin-left: 5px;
+}
+.course-info .hour{
+    width: 94px;
+    height: 30px;
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+    text-align: center;
+    color: #FF4A60;
+}
+.course-info .hour p{
+    margin-top: 4px;
+    font-size: 14px;
+}
+
+/* footer section styles */
+footer{
+    background-color: #562EFF;
+    text-align: center;
+    height: 90px;
+}
+.footer-nav{
+    display: flex;
+    justify-content: center;
+}
+footer ul li{
+    list-style: none;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+    margin:20px 20px 5px;
+    display: inline-block;
+}
+.copyright{
+    color: white;
 }
